@@ -1,0 +1,22 @@
+program for palindrome in golang 
+
+
+package main
+import "fmt"
+func main() {
+
+	var givenstr string = "12321"
+        var revstr string = ""
+	var length = len(givenstr)
+
+	for i := length - 1; i >= 0; i -- {
+		revstr = revstr + string(givenstr [i])
+	}
+
+	
+	if givenstr == revstr {
+		fmt.Println("It is Palindrome");
+	} else {
+		fmt.Println("It is NOT a Palindrome");
+	}
+}
